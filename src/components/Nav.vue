@@ -27,11 +27,7 @@ export default {}
 <style>
 .mainNav {
   background-color: #aa0601;
-}
-
-.mainNav::after {
-  box-sizing: border-box;
-  margin: 20px;
+  padding: 20px 0;
 }
 
 .mainNav header img {
