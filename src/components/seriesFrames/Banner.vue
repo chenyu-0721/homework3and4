@@ -201,7 +201,7 @@ onUnmounted(() => {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .banner {
     margin: 40px 0;
   }

@@ -64,7 +64,7 @@ const handleCustomEvent = (value) => {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .navList .container {
     max-width: 100%;
   }

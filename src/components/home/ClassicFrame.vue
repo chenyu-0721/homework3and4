@@ -73,7 +73,7 @@ export default {}
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .classicFrame {
     padding: 40px 0;
   }

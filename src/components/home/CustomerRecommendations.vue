@@ -109,7 +109,7 @@ export default {}
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .customerRecommendations {
     margin: 4mm 0;
   }

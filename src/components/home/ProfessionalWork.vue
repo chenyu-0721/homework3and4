@@ -108,7 +108,7 @@ export default {}
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 500px) {
   .professionalWork .col img {
     margin: 32px 0 24px 0;
   }

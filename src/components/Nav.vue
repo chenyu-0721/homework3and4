@@ -3,19 +3,20 @@
     <div class="container">
       <header class="">
         <div>
-          <img
-            src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"
-          />
+          <a href="/">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"
+          /></a>
         </div>
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <router-link to="/seriesframes" class="nav-link fs-5" aria-current="page"
+            <router-link to="/seriesframes" class="nav-link" aria-current="page"
               >系列鏡框</router-link
             >
           </li>
-          <li class="nav-item"><a href="#" class="nav-link fs-5">門市據點</a></li>
-          <li class="nav-item"><a href="#" class="nav-link fs-5">部落格</a></li>
-          <li class="nav-item"><a href="#" class="nav-link fs-5">常見問題</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">門市據點</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">部落格</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">常見問題</a></li>
         </ul>
       </header>
     </div>
@@ -42,6 +43,7 @@ export default {}
 
 .mainNav .nav-link {
   color: white;
+  font-size: 20px;
 }
 
 .mainNav .nav-link:focus,

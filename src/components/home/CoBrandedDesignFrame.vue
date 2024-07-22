@@ -93,7 +93,7 @@ export default {}
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .coBrandedDesignFrame {
     padding: 40px 0;
   }
