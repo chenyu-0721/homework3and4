@@ -1,5 +1,5 @@
 <template>
-  <section class="mainNav flexPostion">
+  <section class="mainNav">
     <div class="container">
       <header class="">
         <div>
@@ -9,7 +9,9 @@
         </div>
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="#" class="nav-link fs-5" aria-current="page">系列鏡框</a>
+            <router-link to="/seriesframes" class="nav-link fs-5" aria-current="page"
+              >系列鏡框</router-link
+            >
           </li>
           <li class="nav-item"><a href="#" class="nav-link fs-5">門市據點</a></li>
           <li class="nav-item"><a href="#" class="nav-link fs-5">部落格</a></li>
@@ -28,6 +30,9 @@ export default {}
 .mainNav {
   background-color: #aa0601;
   padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .mainNav header img {
@@ -50,6 +55,10 @@ export default {}
 }
 
 @media (max-width: 500px) {
+  .mainNav {
+    padding: 0px;
+  }
+
   .mainNav header {
     display: flex;
     flex-direction: column;
@@ -70,23 +79,19 @@ export default {}
 
   .mainNav .nav-link {
     border: 1px solid white;
+    padding: 12px;
     border-radius: 0px !important;
   }
-  .mainNav .flexPostion {
-    display: none;
+  .mainNav {
+    display: block;
+    padding-bottom: 0px;
   }
   .mainNav .container {
     padding: 0px;
   }
 
   .mainNav header img {
-    margin: 15px;
+    margin: 12px 15px;
   }
-}
-
-.mainNav .flexPostion {
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
 </style>

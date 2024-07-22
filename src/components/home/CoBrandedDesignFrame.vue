@@ -1,11 +1,11 @@
 <template>
   <section class="coBrandedDesignFrame">
-    <div class="container d-flex flex-column align-items-center">
-      <h2 class="fs-48">聯名設計鏡框</h2>
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+      <h2 class="">聯名設計鏡框</h2>
       <div class="album">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 text-center g-2">
-            <div class="col">
+        <div class="">
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 text-center g-3">
+            <div class="col d-flex flex-column align-items-center">
               <img
                 class="imgWeb"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true"
@@ -14,11 +14,11 @@
                 class="imgApp"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true"
               />
-              <div class="card-body">
-                <h3 class="card-text fs-48">DOUBLE A+</h3>
+              <div class="card-body border">
+                <h3 class="card-text">DOUBLE A+</h3>
               </div>
             </div>
-            <div class="col">
+            <div class="col d-flex flex-column align-items-center">
               <img
                 class="imgWeb"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true"
@@ -27,8 +27,8 @@
                 class="imgApp"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true"
               />
-              <div class="card-body">
-                <h3 class="card-text fs-48">YOUTH</h3>
+              <div class="card-body border">
+                <h3 class="card-text">YOUTH</h3>
               </div>
             </div>
           </div>
@@ -57,23 +57,9 @@ export default {}
   display: none;
 }
 
-@media (max-width: 768px) {
-  .coBrandedDesignFrame {
-    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true');
-  }
-
-  .coBrandedDesignFrame .imgApp {
-    display: block;
-  }
-
-  .coBrandedDesignFrame .imgWeb {
-    display: none;
-  }
-}
-
 .coBrandedDesignFrame h2 {
+  font: normal normal bold 48px/72px Source Han Sans TW;
   color: #ffffff;
-  font-weight: bold;
   margin-bottom: 48px;
 }
 
@@ -84,14 +70,59 @@ export default {}
 
 .coBrandedDesignFrame .card-body {
   background: #ffffff;
+  width: 100%;
 }
 
 .coBrandedDesignFrame .card-body h3 {
+  font: italic normal 900 48px/72px Roboto;
   color: #aa0601;
-  font-style: italic;
 }
 
 .coBrandedDesignFrame .col {
   padding: 0px;
+}
+
+@media (max-width: 768px) {
+  .coBrandedDesignFrame {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true');
+  }
+
+  .coBrandedDesignFrame .card-body h3 {
+    font: italic normal 900 48px/72px Roboto;
+    color: #aa0601;
+  }
+}
+
+@media (max-width: 375px) {
+  .coBrandedDesignFrame {
+    padding: 40px 0;
+  }
+
+  .coBrandedDesignFrame .container {
+    padding: 0px 14px 0 13px;
+  }
+  .coBrandedDesignFrame h2 {
+    font: normal normal bold 24px/36px Source Han Sans TW;
+    margin-bottom: 24px;
+  }
+
+  .coBrandedDesignFrame .col img {
+    width: 348px;
+    height: 240px;
+  }
+
+  .coBrandedDesignFrame .card-body {
+    width: 348px;
+    height: 88px;
+  }
+
+  .coBrandedDesignFrame .card-body h3 {
+    font: italic normal 900 48px/72px Roboto;
+    color: #aa0601;
+  }
+
+  .coBrandedDesignFrame .col {
+    padding: 0px;
+  }
 }
 </style>

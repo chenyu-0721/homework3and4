@@ -5,28 +5,28 @@
         <div class="list d-flex justify-content-between">
           <div class="webDisplay">
             <div class="d-flex flex-column">
-              <ul class="nav-list d-flex">
+              <ul class="nav-list d-flex pt-2">
                 <li><a href="#">首頁</a></li>
                 <li><a href="#">系列鏡框</a></li>
                 <li><a href="#">門市據點</a></li>
                 <li><a href="#">部落格</a></li>
                 <li><a href="#">常見問題</a></li>
               </ul>
-              <p class="text-white mt-4">
-                <span class="material-symbols-outlined fs-36">call</span>0800-000-00
+              <p class="text-white mt-4 info">
+                <span class="material-symbols-outlined">call</span>0800-000-00
               </p>
-              <p class="text-white">
-                <span class="material-symbols-outlined fs-36">mail</span>glasses@business.com
+              <p class="text-white info">
+                <span class="material-symbols-outlined">mail</span>glasses@business.com
               </p>
             </div>
           </div>
           <div class="appDisplay">
             <div class="d-flex flex-column">
-              <p class="text-white">
-                <span class="material-symbols-outlined fs-36">call</span>0800-000-00
+              <p class="text-white info">
+                <span class="material-symbols-outlined">call</span>0800-000-00
               </p>
-              <p class="text-white">
-                <span class="material-symbols-outlined fs-36">mail</span>glasses@business.com
+              <p class="text-white info">
+                <span class="material-symbols-outlined">mail</span>glasses@business.com
               </p>
             </div>
           </div>
@@ -48,10 +48,10 @@
       </div>
 
       <div class="center mt-3 pb-3">
-        <p class="text-white">Copyright © 2020 Glasses. All rights reserved.</p>
+        <p class="bottomText">Copyright © 2020 Glasses. All rights reserved.</p>
         <ul class="d-flex footer-links">
-          <li class="text-white">隱私權政策</li>
-          <li class="text-white">服務條款</li>
+          <li>隱私權政策</li>
+          <li>服務條款</li>
         </ul>
       </div>
     </div>
@@ -70,7 +70,9 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: white;
+  font: normal normal normal 16px/24px Source Han Sans TW;
+  color: #ffffff;
+  margin-right: 15px;
 }
 
 footer a:hover {
@@ -88,8 +90,9 @@ footer ul {
 }
 
 footer li {
-  font-size: 14px;
-  margin-right: 24px;
+  font: normal normal normal 14px/21px Source Han Sans TW;
+  letter-spacing: 0px;
+  color: #ffffff;
 }
 
 footer .footerLogo img {
@@ -98,7 +101,13 @@ footer .footerLogo img {
   margin-right: 16px;
 }
 
+footer .info {
+  font: normal normal normal 36px/54px Source Han Sans TW;
+  color: #ffffff;
+}
+
 footer .material-symbols-outlined {
+  font-size: 36px;
   margin-right: 22px;
 }
 
@@ -111,6 +120,12 @@ footer .center {
   justify-content: space-between;
 }
 
+footer .center .bottomText {
+  font: normal normal normal 16px/24px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
 footer .webDisplay {
   display: block;
 }
@@ -120,13 +135,17 @@ footer .appDisplay {
 }
 
 @media (max-width: 768px) {
+  footer {
+    padding-top: 56px;
+  }
+
   footer .footerLogo img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 500px) {
   footer .center {
     align-items: start;
     flex-direction: column;
@@ -138,6 +157,37 @@ footer .appDisplay {
 
   footer .appDisplay {
     display: block;
+  }
+
+  footer {
+    padding-top: 24px;
+  }
+
+  footer .footerLogo img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  footer .info {
+    font: normal normal normal 16px/24px Source Han Sans TW;
+  }
+
+  footer .material-symbols-outlined {
+    font-size: 18px;
+    margin-right: 11px;
+  }
+
+  footer .list {
+    margin-bottom: 5px;
+  }
+
+  footer .center .bottomText {
+    font: normal normal normal 16px/24px Roboto;
+  }
+
+  footer li {
+    font: normal normal normal 16px/24px Source Han Sans TW;
   }
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
   <section class="customerRecommendations d-flex align-items-center flex-column">
-    <h2 class="fs-48">顧客推薦</h2>
+    <h2 class="">顧客推薦</h2>
     <div class="album">
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3">
           <div class="col">
             <div class="card shadow-sm">
               <img
@@ -76,13 +76,9 @@ export default {}
 }
 
 .customerRecommendations h2 {
+  font: normal normal bold 48px/72px Source Han Sans TW;
   color: #650300;
-  font-weight: bold;
   margin-bottom: 48px;
-}
-
-.customerRecommendations .content {
-  margin-bottom: 72px;
 }
 
 .customerRecommendations .col img {
@@ -92,14 +88,43 @@ export default {}
 
 .customerRecommendations .col .card {
   height: 100%;
+  font: normal normal medium 16px/24px Source Han Sans TW;
+  color: #000000;
+  box-shadow: 0px 2px 6px #00000029 !important;
 }
 
 .customerRecommendations .card-body p {
+  font: normal normal normal 16px/24px Source Han Sans TW;
   color: #000000;
 }
 
 .customerRecommendations .card-body span {
+  font: normal normal normal 14px/21px Source Han Sans TW;
   color: #707070;
-  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .customerRecommendations {
+    margin: 80px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .customerRecommendations {
+    margin: 4mm 0;
+  }
+
+  .customerRecommendations h2 {
+    font: normal normal bold 24px/36px Source Han Sans TW;
+  }
+
+  .customerRecommendations .card-body p {
+    font: normal normal normal 16px/24px Source Han Sans TW;
+    margin: 8px 0;
+  }
+
+  .customerRecommendations .card-body span {
+    font: normal normal normal 14px/21px Source Han Sans TW;
+  }
 }
 </style>
