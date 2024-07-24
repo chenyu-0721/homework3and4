@@ -21,15 +21,11 @@ export default {}
 }
 
 .bgImage h3 {
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 36px/54px
-    var(--unnamed-font-family-source-han-sans-tw);
   font: normal normal normal 36px/54px Source Han Sans TW;
   color: #650300;
 }
 
 .bgImage h1 {
-  font: var(--unnamed-font-style-normal) normal bold 64px/96px
-    var(--unnamed-font-family-source-han-sans-tw);
   font: normal normal bold 64px/96px Source Han Sans TW;
   color: #650300;
 }
@@ -49,6 +45,13 @@ export default {}
   .bgImage {
     background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true');
     height: 787px;
+  }
+
+  .bgImage h1 {
+    font: normal normal bold 36px/54px Source Han Sans TW;
+  }
+  .bgImage h3 {
+    font: normal normal normal 18px/35px Source Han Sans TW;
   }
 }
 

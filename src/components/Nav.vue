@@ -14,9 +14,13 @@
               >系列鏡框</router-link
             >
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">門市據點</a></li>
+          <li class="nav-item">
+            <router-link to="/store" class="nav-link">門市據點</router-link>
+          </li>
           <li class="nav-item"><a href="#" class="nav-link">部落格</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">常見問題</a></li>
+          <li class="nav-item">
+            <router-link to="/question" class="nav-link">常見問題</router-link>
+          </li>
         </ul>
       </header>
     </div>
