@@ -63,7 +63,7 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-md-7 order-md-2 webimginfo">
+          <div class="col-md-7 order-md-2 webimginfo">
             <gmp-map center="25.052026748657227,121.53743743896484" zoom="14" map-id="DEMO_MAP_ID">
               <gmp-advanced-marker
                 position="25.052026748657227,121.53743743896484"
@@ -78,7 +78,7 @@
                 title="My location"
               ></gmp-advanced-marker>
             </gmp-map>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>

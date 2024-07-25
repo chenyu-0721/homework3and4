@@ -17,7 +17,9 @@
           <li class="nav-item">
             <router-link to="/store" class="nav-link">門市據點</router-link>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">部落格</a></li>
+          <li class="nav-item">
+            <router-link to="/blog" class="nav-link">部落格</router-link>
+          </li>
           <li class="nav-item">
             <router-link to="/question" class="nav-link">常見問題</router-link>
           </li>
@@ -60,7 +62,7 @@ export default {}
   justify-content: space-between;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .mainNav {
     padding: 0px;
   }

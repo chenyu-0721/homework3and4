@@ -145,7 +145,7 @@ footer .appDisplay {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 595px) {
   footer .center {
     align-items: start;
     flex-direction: column;

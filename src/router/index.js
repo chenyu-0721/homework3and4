@@ -4,6 +4,8 @@ import SeriesFrames from '../views/SeriesFrames.vue'
 import storeView from '@/views/storeView.vue'
 import storePage from '@/components/storePosition/storePage.vue'
 import questionView from '@/views/questionView.vue'
+import BlogView from '@/views/BlogView.vue'
+import BlogInfoView from '@/views/BlogInfoView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -31,6 +33,16 @@ const router = createRouter({
       path: '/question',
       name: 'question',
       component: questionView
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: BlogView
+    },
+    {
+      path: '/blogInfoView',
+      name: 'blogInfoView',
+      component: BlogInfoView
     }
   ]
 })
