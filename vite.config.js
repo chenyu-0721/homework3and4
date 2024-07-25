@@ -8,12 +8,18 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 export default defineConfig({
   base: '/homework3and4/',
   plugins: [vue(), vueDevTools()],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  },
   define: {
     'process.env': process.env
+  },
+  build: {
+    outDir: 'dist'
+  },
+  server: {
+    historyApiFallback: true
+  },
+  resolve: {
+    alias: {
+      '@': '/src'
+    }
   }
 })
