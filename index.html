@@ -3,47 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/homework3and4/favicon.ico">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>主線任務第三第四周</title>
+  <script type="module" crossorigin src="/homework3and4/assets/index-GntdHNU4.js"></script>
+  <link rel="stylesheet" crossorigin href="/homework3and4/assets/index-DguKjSTc.css">
 </head>
 
 <body>
   <div id="app"></div>
-  <script type="module">
-    import.meta.env = {
-      VITE_GOOGLE_MAPS_API_KEY: `${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}`
-    };
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-      const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap&libraries=maps,marker&v=beta`;
-      script.async = true;
-      document.head.appendChild(script);
-    });
-
-    window.initMap = () => {
-      const map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 25.052026748657227, lng: 121.53743743896484 },
-        zoom: 14,
-        mapId: 'DEMO_MAP_ID'
-      });
-
-      const marker = new google.maps.Marker({
-        position: { lat: 25.052026748657227, lng: 121.53743743896484 },
-        map: map,
-        title: 'My location'
-      });
-    };
-  </script>
-  <script type="module" src="/src/main.js"></script>
+  <div id="map" style="height: 500px;"></div>
 </body>
 
 </html>
-
-<style>
-
-</style>
