@@ -7,7 +7,7 @@ import questionView from '@/views/questionView.vue'
 import BlogView from '@/views/BlogView.vue'
 import BlogInfoView from '@/views/BlogInfoView.vue'
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/homework3and4/'),
   routes: [
     {
       path: '/',

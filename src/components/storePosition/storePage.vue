@@ -86,7 +86,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 const selectedstorePage = ref('台北中山旗艦店') // 初始值
 </script>
