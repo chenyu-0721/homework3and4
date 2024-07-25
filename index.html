@@ -7,10 +7,20 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主線任務第三第四周</title>
+</head>
+
+<body>
+  <div id="app"></div>
   <script type="module">
+    import.meta.env = {
+      VITE_GOOGLE_MAPS_API_KEY: `${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}`
+    };
+
     document.addEventListener('DOMContentLoaded', () => {
+      const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
       const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAA1yQc2nuq3fV2-2fTgpbGywbgzigRrCc&callback=initMap&libraries=maps,marker&v=beta`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap&libraries=maps,marker&v=beta`;
       script.async = true;
       document.head.appendChild(script);
     });
@@ -29,16 +39,11 @@
       });
     };
   </script>
-  <title>主線任務第三第四周</title>
-</head>
-
-<body>
-  <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
 
 <style>
-
+  /* 添加样式 */
 </style>
